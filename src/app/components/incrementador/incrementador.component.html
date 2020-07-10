@@ -7,10 +7,14 @@
     </button>
   </span>
 
-  <input type="text"
+  <input type="number"
+         min="0"
+         max="100"
          class="form-control"
          name="progreso"
-         [(ngModel)]="progreso">
+         [(ngModel)]="progreso"
+         (ngModelChange)="inputChange($event)"
+         #txtProgress>
 
   <span class="input-group-btn">
     <button class="btn btn-primary" type="button" (click)="cambiarValor(5)">
