@@ -16,6 +16,7 @@ import { ProgressComponent } from './progress/progress.component';
 
 // Temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
     DashboardComponent,
     Graficas1Component,
     ProgressComponent,
-    IncrementadorComponent
+    IncrementadorComponent,
+    AccountSettingsComponent
   ],
   exports: [
     DashboardComponent,
